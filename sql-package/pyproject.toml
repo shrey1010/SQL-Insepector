@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "list-sql-queries"
+version = "1.0.1"
+description = "A Django middleware package to list down all sql queries and time complexity in a request - response cycle!"
+readme = "README.md" 
+
+authors =[
+    {"name"="Shrey Shukla"},
+]
+
+dependencies = [
+    "Pygments>=2.18.0",
+    "sqlparse>=0.5.1",
+]
+
+
+requires-python =">=3.11"
+
+[tools.setuptools.packages.find]
+include = ["list-sql-queries"]
+
+[project.urls]
+Homepage = "https://github.com/shrey1010"
